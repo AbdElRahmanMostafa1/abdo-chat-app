@@ -36,7 +36,7 @@ io.on('connection', (socket) => {
         const newChat = new Chat(chatMsg)
         try {
             await newChat.save();
-            await sendChatNotification(newChat.receiverId, newChat.title, newChat.body)
+            await sendChatNotification(newChat.receiverId, "NEW MESSAGE", newChat.textMessage)
         } catch (error) {
             console.log("error");
         }

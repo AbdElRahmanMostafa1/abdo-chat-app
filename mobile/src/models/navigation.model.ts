@@ -5,6 +5,7 @@ export type MainStackParamList = {
   LandingPage: undefined;
   Login: undefined;
   Chat: undefined;
+  Signup: undefined;
 };
 
 export type TabsParamList = {

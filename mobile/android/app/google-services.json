@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "776514748582",
+    "project_id": "abdo-chat-app",
+    "storage_bucket": "abdo-chat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776514748582:android:348d4c42bdb436a861f467",
+        "android_client_info": {
+          "package_name": "com.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcbgWhODL3dGLCbBgeTYeeQQrR9I3Xt4Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

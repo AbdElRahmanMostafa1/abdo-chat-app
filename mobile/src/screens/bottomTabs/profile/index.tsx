@@ -16,7 +16,7 @@ const Profile = () => {
   const getAllUsers = async () => {
     const token = await AsyncStorage.getItem('token');
     try {
-      const {data} = await axios.get('http://192.168.1.4:5000/api/users', {
+      const {data} = await axios.get('http://192.168.1.225:5000/api/users', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
