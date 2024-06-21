@@ -6,6 +6,7 @@ import LandingPage from '@src/screens/intro/landingPage';
 import BottomStack from './bottomTabStack';
 import Login from '@src/screens/auth/login';
 import Chat from '@src/screens/chat';
+import Register from '@src/screens/auth/register';
 const MainStack = createNativeStackNavigator<MainStackParamList>();
 export type RootStackNavigationProp = StackNavigationProp<MainStackParamList>;
 
@@ -17,6 +18,7 @@ const MainNavigator = () => {
       <MainStack.Screen name="LandingPage" component={LandingPage} />
       <MainStack.Screen name="BottomStack" component={BottomStack} />
       <MainStack.Screen name="Login" component={Login} />
+      <MainStack.Screen name="Signup" component={Register} />
       <MainStack.Screen name="Chat" component={Chat} />
     </MainStack.Navigator>
   );

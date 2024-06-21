@@ -14,8 +14,8 @@ const sendChatNotification = async (receiverId, title, body) => {
                     sound: "default",
                 },
                 data: {
-                    title: title,
-                    body: body,
+                    title: title.toString(),
+                    body: body.toString(),
                 },
             },
             token: receiver.deviceToken,

@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
 const handleExistingUser = async (field, value, res) => {
+    const userExist = await User.findOne({ [field]: value })
     console.log({ userExist });
     if (userExist) {
         res.status(400);
@@ -28,6 +29,7 @@ const registerUser = asyncHandler(async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, salt);
 
     const user = await User.create({ userName, email, password: hashedPassword, deviceToken });
+    console.log({user});
 
     if (user) {
         res.status(200).json({
